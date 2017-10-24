@@ -9,21 +9,27 @@
         <meta charset="utf-8" />
         <title>Community</title>
       </head>
+    <style>
+      a { text-indent: 25px; }
+    </style>
 <body>
-<h1><font> <center>СФ БашГу</center></font>
+<h1> <center>СФ БашГу</center></h1>
 <br>
-
 
 <div class="header">
 <div class="header_resize">
 <div class="clr"></div>
     <div class="hbg">
-      <h3>Community</h3>
+        <a href="/index">
+      <h3><center>Community</center></h3>
+         </a>
       <div class="clr"></div>
     </div>
   </div>
   <div class="clr"></div>
 </div>
+
+<h4><a href="{% url 'new_post' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a> </h4>
 </div>
 </div>
 
@@ -35,14 +41,14 @@
 {% for posts in com %}
 <div>
   <p><h1>{{posts.title}}</h1></p>
-  <p>{{posts.text}}</p>
+  <p><center>{{posts.text}}</center></p>
 </div>
 {% endfor %}
 <div class="clr"></div>
 </div>
 
 
-<a href="{% url 'new_post' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+
 
 </body>
 </html>

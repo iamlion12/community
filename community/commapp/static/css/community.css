@@ -56,7 +56,7 @@ h3 {
 	text-transform:uppercase;
 }
 p {
-	margin:8px 0;
+	margin:2px 0;
 	padding:0 0 8px;
 	font:normal 12px Arial, Helvetica, sans-serif;
 }
@@ -158,8 +158,8 @@ a.rm, a.com {
 }
 
 .article {
-	margin:20 0 10px;
-	padding:0px 20px 10px;
+	margin:25px 0px 13px;
+	padding:0px 25px 13px;
 }
 
 .mainbar .spec a {
