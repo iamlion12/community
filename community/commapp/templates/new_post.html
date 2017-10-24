@@ -1,0 +1,38 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+ <html lang="ru">
+    <head>
+      <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+      <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+      <link rel="stylesheet" href="{% static 'css/community.css' %}">
+        <meta charset="utf-8" />
+        <title>Community</title>
+      </head>
+<body>
+<h1><font> <center>СФ БашГу</center></font>
+<br>
+
+
+<div class="header">
+<div class="header_resize">
+<div class="clr"></div>
+    <div class="hbg">
+      <h3>Community</h3>
+      <div class="clr"></div>
+    </div>
+  </div>
+  <div class="clr"></div>
+</div>
+</div>
+</div>
+
+<br>
+
+<form method="POST" class="post-form">{% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" class="save btn btn-default">Save</button>
+</form>
+
+</body>
+</html>
